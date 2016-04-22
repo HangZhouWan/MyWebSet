@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-	background-image:url(img/bgc.gif);
+	background-image:url(bgc.gif);
 	display:flex;
 	display:-webkit-flex;
 	align-items:center;
