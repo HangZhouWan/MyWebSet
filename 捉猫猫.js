@@ -1,4 +1,5 @@
 // JavaScript Document
+// 很抱歉拖了这么久才给您，前两周一直处于出差的状态，程序写的比较仓促。实现了一些我之前的想法，可是还有很多想法不知道怎么实现（比如怎么不使用那么多的闭包。。。）。这样让我产生了学习的动力和方向,代码还要多写才行。
 window.onload = function(){
     try{
 		Click();
@@ -78,8 +79,8 @@ function create(){
 	cat.onclick = function(){
 	       if(key==true){
 		   var num = Math.round(Math.random()*100);
-		      if(num<200){
-			  alert("Hi~yoyo");
+		      if(num<10){
+			  win();   //中奖程序 
 		      }
 		   key = false;
 	       }
@@ -93,7 +94,7 @@ function create(){
 		hole.style.height = holeHeight+"px";
 		if(holeWidth == 120){
 			clearInterval(clearGrowUp);
-			cat.setAttribute("src","cat.png");
+			cat.setAttribute("src","img/cat.png");
 	        cat.style.cssText = "width:80px; height:100px; position:absolute; left:20px;top:160px; cursor:pointer;"	
 			var clearCatOut = setInterval(catOut,15);
 			function catOut(){
@@ -211,6 +212,11 @@ function timer(){
 		clearInterval(tools.clearCraete);
 		console.log("timeOut");
 	}
+}
+
+
+function win(){
+	alert("恭喜您抽到红包~");
 }
 
 		
