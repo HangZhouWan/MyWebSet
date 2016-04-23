@@ -94,7 +94,7 @@ function create(){
 		hole.style.height = holeHeight+"px";
 		if(holeWidth == 120){
 			clearInterval(clearGrowUp);
-			cat.setAttribute("src","img/cat.png");
+			cat.setAttribute("src","cat.png");
 	        cat.style.cssText = "width:80px; height:100px; position:absolute; left:20px;top:160px; cursor:pointer;"	
 			var clearCatOut = setInterval(catOut,15);
 			function catOut(){
